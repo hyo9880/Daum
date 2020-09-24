@@ -56,12 +56,12 @@
       }
 
       .heading-4 {
-        padding-left: 30px;
+        padding-left: 1px;
         padding-right: 30px;
       }
 
       h3.heading-4 {
-          font-size: 19px;
+          font-size: 22px;
           display: inline-block;
           margin-top: 8px;
           margin-bottom: 8px;
@@ -75,7 +75,7 @@
         border-bottom-width: 5px;
         border-bottom-color: #fc2444;
         padding-bottom: 9px 12px;
-        padding: 9px 12px;
+        padding: 9px 5px;
         line-height: 1.7rem;
         text-align: center;
       }
@@ -102,6 +102,7 @@
       }
 
       .div-block-2 {
+        display: block;
         margin-bottom: 11px;
         padding-top: 18px;
         padding-bottom: 18px;
@@ -110,16 +111,11 @@
 
         .hwrapper {
           display: flex;
-          margin-right: 203px;
-          margin-left: 203px;
-          flex-direction: column;
-          align-items: center;
-}
-
-        .hwrapper:small {
-          margin-right: 60px;
-          margin-left: 60px;
+          flex-direction: row;
+          justify-content: center;
+          justify-items: center;
         }
+
 
         .paragraph {
             margin-top: 10px;
@@ -163,12 +159,7 @@
           text-align: center;
         }
 
-        img {
-          display: inline-block;  
-          margin-right: 0.3rem;
-          
-        }
-
+        
         .container {
           display: flex;
           margin-top: 11px;
@@ -195,6 +186,18 @@
           margin-bottom: 21px;
           justify-content: space-around;
         }
+
+        .img {
+          display: inline-block;
+          background-image: url('https://t1.daumcdn.net/cafeattach/1Yrxn/1ae410c6c840bc02b1b3aace1c08cd3f02433745');
+          width: 22px;
+          height: 20px;
+          margin-top: 14px; 
+          margin-left: 20px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
 
         .r-img {
           display: flex;
@@ -351,7 +354,15 @@
         text-decoration: none;
         }
 
-        
+        @media screen and (max-width: 768px) {
+          .list-item {
+            padding-left: 0px;
+          }
+
+          ul.list {
+            list-style-type: disc;
+        }
+      }
 
   </style>
   </head>
@@ -363,15 +374,24 @@
         ><span style="color: #a59d9d;">van</span><span style="color:#4ebb20; padding-right: 5px;">U</span>Recruit
       </h1>
       <h2 class="heading-3">구인/구직 무료 매칭 서비스</h2>
+
+
+
+
       <div class="div-block-2">
-        <div calss="hwrapper">
-          <img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1ae410c6c840bc02b1b3aace1c08cd3f02433745" height= 16px width=14px>
+        <div class="hwrapper">
+          <div class="img"></div>
           <h3 class="heading-4">"구직자님", 취업처 찾아 드립니다!!</h3>
         </div>
-          <div calss="hwrapper">
-            <img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1ae410c6c840bc02b1b3aace1c08cd3f02433745" height= 16px width=14pxa>
-             <h3 class="heading-4">"사장님, 매니저님" 구직자 찾아드립니다!!</h3>
-          </div>
+        <div class="hwrapper">
+          <div class="img"></div>
+          <h3 class="heading-4">"사장님, 매니저님" 구직자 찾아드립니다!!</h3>
+        </div>
+
+
+
+
+
       </div>
       <p class="paragraph" style="margin-bottom: 0px; padding-bottom: 10px;">
         UvanU는 2001년 이래로 밴쿠버에 계시는 교민 분들을 위한 카페를 운영하여
@@ -447,10 +467,10 @@
             class="button"
           >
             <div class="div-block">
-              <div class="text-block-4"><img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1a0c2d6653a3afd05c9c38016bdca082bf9b4340?type=thumb&opt=R474x0a" height="32rem" width="24rem" style="margin-right: 15px;" ></div>
+              <div class="text-block-4"><img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1a0c2d6653a3afd05c9c38016bdca082bf9b4340?type=thumb&opt=R474x0a" height="32rem" width="24rem" style="margin-right: 20px;" ></div>
             </div>
             <div>
-              <div class="BntTtxtbig" style="font-size: 24px;">구직신청서</div>
+              <div class="BntTtxtbig" style="font-size: 24px; padding-left: 5px;">구직신청서</div>
               <div class="BntTtxtbig small">(구직자용)</div>
             </div>
           </a>
@@ -518,10 +538,10 @@
             class="button employer"
           >
             <div class="div-block">
-              <div class="text-block-4"><img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1a0c2d6653a3afd05c9c38016bdca082bf9b4340?type=thumb&opt=R474x0a" height="32rem" width="24rem" style="margin-right: 15px;"></div>
+              <div class="text-block-4"><img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1a0c2d6653a3afd05c9c38016bdca082bf9b4340?type=thumb&opt=R474x0a" height="32rem" width="24rem" style="margin-right: 20px;"></div>
             </div>
             <div>
-              <div class="BntTtxtbig" style="font-size: 24px;">구인신청서</div>
+              <div class="BntTtxtbig" style="font-size: 24px; padding-left: 5px;">구인신청서</div>
               <div class="BntTtxtbig small">(고용주용)</div>
             </div>
           </a>
@@ -533,7 +553,7 @@
       <a
       href="https://open.kakao.com/o/sCM5s5n"
       target="_blank" class="kakaolink" style="text-decoration: none;">
-      <h2 class="kakao">오픈카톡 상담<br>
+      <h2 class="kakao">오픈카톡<br>상담<br>
       가능시간 <span style="color: #fff; font-size: 22px; text-decoration: red wavy underline;"><br>평일 10~6시  </span></h2>
       </a>
     </div>    
