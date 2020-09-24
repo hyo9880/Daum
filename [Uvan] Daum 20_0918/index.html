@@ -1,0 +1,543 @@
+<html lang="ko">
+  <head>
+    <link href="/fontawesome.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600;700&family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        background-color: rgb(255, 255, 255);
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(51, 51, 51);
+        margin: 0px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .section {
+        display: inline-block;
+        width: auto;
+        max-width: 100%;
+        border-top-width: 1px;
+        border-top-color: #d4d0d0;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #d4d0d0;
+
+      }
+
+
+
+      .heading-3 {
+        display: block;
+        margin-top: 23px;
+        margin-bottom: 11px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        flex-direction: row;
+        align-items: center;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-bottom-color: #d30826;
+        background-color: #fc2444;
+        color: #ffeaea;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 32px;
+      }
+
+      h3.heading-4 {
+          font-size: 19px;
+          display: block;
+          margin-top: 8px;
+          margin-bottom: 8px;
+          color:#534e4e;
+          text-align: center;
+      }
+
+      h2.heading-4 {
+        font-size: 19px;
+        border-bottom-style: double;
+        border-bottom-width: 5px;
+        border-bottom-color: #fc2444;
+        padding-bottom: 9px 12px;
+        padding: 9px 12px;
+
+      }
+
+      h2.kakao {
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 1.4px;
+      } 
+
+      .heading-4.employer {
+        border-bottom-color: #34b8e0;
+      }
+
+      .heading-6 {
+        margin-bottom: 39px;
+        font-family: IBM Plex Sans;
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .div-block-2 {
+        margin-bottom: 11px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        background-color: #f3f3f3;
+      }
+
+        .hwrapper {
+          display: flex;
+          margin-right: 203px;
+          margin-left: 203px;
+          flex-direction: column;
+          align-items: center;
+}
+
+        .hwrapper:small {
+          margin-right: 60px;
+          margin-left: 60px;
+        }
+
+        .paragraph {
+            margin-top: 10px;
+            padding-top: 19px;
+            padding-right: 60px;
+            padding-bottom: 19px;
+            padding-left: 60px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-top-color:#d4d0d0;
+            border-bottom-style: none;
+            border-bottom-width: 1px;
+            border-bottom-color:#d4d0d0;
+            color: #635f5f;
+            font-size: 14px;
+            line-height: 1.4rem;
+            text-align: center;
+            letter-spacing: 0.03rem;
+            text-indent: 0rem;
+        }
+
+        .paragraph.footer {
+          padding-top: 16px;
+          padding-bottom: 5px;
+          border-top-style: none;
+        }    
+
+        .paragraph.strong {
+          margin-top: 10px;
+          border-top-style: none;
+          background-color: hsla(347, 100.00%, 97.54%, 1.00);
+          color: #fc2444;
+          font-weight: 600;
+        }
+
+        .paragraph2 {
+          margin-bottom: 41px;
+          padding: 20px;
+          color: #fc2444;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        img {
+          margin-right: 0.3rem;
+        }
+
+        .container {
+          display: flex;
+          margin-top: 11px;
+          margin-bottom: 11px;
+          padding: 0px 22px;
+          padding-top: 18px;
+          padding-bottom: 18px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #f3f3f3;
+        }
+
+        .bodywrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .img-wrapper {
+          display: flex;
+          margin-top: 21px;
+          margin-bottom: 21px;
+          justify-content: space-around;
+        }
+
+        .r-img {
+          display: flex;
+          width: 120px;
+          height: 120px;
+          margin-left: 21px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-position: 0px 0px, 50% 50%;
+          background-size: auto, contain;
+          box-shadow: 0 0 3px -1px black;                
+          border: solid;
+          border-color: #24fcc0;
+          border-width: 2;
+
+        }
+
+        .r-img.employer {
+          border-color: #9602f3;
+        }
+
+        div.r-text {
+          width: auto;
+          height: auto;
+          padding-top: 5px;
+          color:#ffffff;
+          font-size: 18.8px;
+          line-height: 22px;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 1px;
+        }
+
+        div.r-text.employer {
+          font-family: "IBM Plex Sans", sans-serif;
+          font-size: 18.6px;
+          line-height: 20px;
+        }
+
+        .roundstrong {
+          color:#24eefc;
+        }
+
+        .roundstrong.employer {
+          color:#fccd24;
+        }
+
+        ul {
+          padding: 0px;
+          margin-bottom: 35px;
+        }
+
+        ul.list {
+          display: flex;
+          width: auto;
+          margin: 19px 19px;
+          padding-left: 30px;
+          padding-right: 50px;
+          padding-top: 20px;
+          padding-bottom: 25px;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 13px;
+          background-color:hsla(347, 100.00%, 97.54%, 1.00);
+          box-shadow: 1px 1px 3px 0 hsla(0, 13.04%, 71.63%, 0.76);
+          list-style-type: "\1F44D";
+        }
+
+        .list.employer {
+          background-color: #edfbff;
+        }
+
+        .list-item {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          padding-left: 10px;
+          font-size: 15px;
+          line-height: 25px;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        .BodyTextSpan {
+          color: #fc2444;
+          font-size: 18px;
+          padding-left: 5px ;
+        }
+
+        .BodyTextSpan.employer {
+          color: #107391;
+        }
+        
+        .button {
+          display: flex;
+          margin: 26px 0px;
+          padding: 19px 40px;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          border-radius: 13px;
+          background-color: #fc2444;
+          text-decoration-line: none;
+          color: #fff;
+        }
+
+        .button.employer {
+          background-color: #107391;
+        }
+
+        .BntTtxtbig {
+          width: auto;
+          font-size: 26px;
+          font-family: IBM Plex;
+          font-weight: 600;
+          line-height: 24px;
+          margin-bottom: 3px;
+          color: #fff6f6;
+        }
+
+        .BntTtxtbig.small {
+          margin-bottom: 0px;
+          font-size: 1.1rem;
+          text-align: center;
+        }     
+
+        .kakaolink {
+          display: flex;
+          overflow:auto;
+          width: auto;
+          height:200px;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          width:630px;
+          padding: 0px 96px;
+          background-image: url('https://t1.daumcdn.net/cafeattach/1Yrxn/d0ec8a30618aa75b36617872013c32237ee2e833?type=thumb&opt=R474x0a');
+          background-position: 50% 50%;
+          background-size: cover;
+}       
+        .kakaolink:hover {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://t1.daumcdn.net/cafeattach/1Yrxn/d0ec8a30618aa75b36617872013c32237ee2e833?type=thumb&opt=R474x0a);
+          background-position: 0px 0px, 50% 50%;
+          background-size: auto, cover;
+        }
+
+        .paragraph.footer {
+          margin-top: 0px;
+          padding: 25px;
+          font-weight: 700;
+          border-top-style: none;
+          background-color: #f3f3f3;
+          line-height: 22px;
+        }
+
+        
+
+  </style>
+  </head>
+  <body>
+    <!—-title—->
+    <div class="section">
+      <h1 class="heading-2" style="display: flex;">
+        <span style="color: #ff9f05;"">U</span
+        ><span style="color: #a59d9d;">van</span><span style="color:#4ebb20; padding-right: 5px;">U</span>Recruit
+      </h1>
+      <h2 class="heading-3">구인/구직 무료 매칭 서비스</h2>
+      <div class="div-block-2">
+        <div calss="hwrapper">
+
+          <h3 class="heading-4"><img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1ae410c6c840bc02b1b3aace1c08cd3f02433745" height= 16rem width=15rem></img>"구직자님", 취업처 찾아 드립니다!!</h3>
+          <h3 class="heading-4"><img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1ae410c6c840bc02b1b3aace1c08cd3f02433745" height= 16rem width=15rem>"사장님, 매니저님" 구직자 찾아드립니다!!</h3>
+        </div>
+      </div>
+      <p class="paragraph" style="margin-bottom: 0px; padding-bottom: 10px;">
+        UvanU는 2001년 이래로 밴쿠버에 계시는 교민 분들을 위한 카페를 운영하여
+        캐나다에서<br />
+        가장 큰 커뮤니티로 성장 도움 드리고 있습니다.
+      </p>
+      <p class="paragraph strong">
+        밴쿠버에서 가장 큰 인프라로 전문적 이민 취업팀인 UvanU 리크루트에서<br />
+        여러분의 구인/구직을 무료 매칭 도움을 드립니다.
+      </p>
+    </div>
+    <!-—취업매칭 장점—->
+    <div class="section">
+      <div class="container">
+        <div class="bodywrapper">
+          <h2 class="heading-4">
+            UvanU 리크루트 스페셜 취업 매칭의 <span style="color: #fc2444;font-size: 24px;">장점</span>
+          </h2>
+          <div class="img-wrapper">
+            <div class="r-img " style="background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.80), hsla(0, 0.00%, 0.00%, 0.40)), url('https://t1.daumcdn.net/cafeattach/1Yrxn/27bd5655bd534696457ad0c684861935944582c0');">
+              <div class="r-text">
+                <span class="roundstrong">다양한</span><br />
+                취업처<br />
+                보유
+              </div>
+            </div>
+            <div class="r-img" style="background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.80), hsla(0, 0.00%, 0.00%, 0.40)), url('https://t1.daumcdn.net/cafeattach/1Yrxn/76cb9412f99e32c73da287001b5c8291decef41a');">
+              <div class="r-text">
+                밴쿠버<br />
+                <span class="roundstrong">최대</span><br />
+                인프라
+              </div>
+            </div>
+            <div class="r-img" style="background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.80), hsla(0, 0.00%, 0.00%, 0.40)), url('https://t1.daumcdn.net/cafeattach/1Yrxn/eaeeb20df2fde1fcaa46e5c89c8f4f2b9438a392');">
+              <div class="r-text">
+                <span class="roundstrong">LMIA</span><br />
+                매칭 가능
+              </div>
+            </div>
+            <div class="r-img" style="margin-right: 21px; background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.80), hsla(0, 0.00%, 0.00%, 0.40)), url('https://t1.daumcdn.net/cafeattach/1Yrxn/7fefd892a6b6b72d9872e567ef3333cb0d2f1d32');">
+              <div class="r-text">
+                <span class="roundstrong">이민</span><br />
+                라이센스<br />
+                <span class="roundstrong">전문가</span><br>상담
+              </div>
+            </div>
+          </div>
+          <ul role="list" class="list">
+            <li class="list-item">
+              Daum 우벤유 카페에서 홍보하시는 고용주 및<span class="BodyTextSpan">20년의 경력</span>으로 <br>
+              <span class="BodyTextSpan">다양한 인프라</span>(고용주 및
+              취업처) 확보
+            </li>
+            <li class="list-item">
+              취업처 매칭(Full-time, Part-time 등 다양한 분야의 취업 매칭 가능)
+            </li>
+            <li class="list-item">
+              <span class="BodyTextSpan">LMIA 업체 소개</span>(LMIA 가 필요하신 분들)
+            </li>
+            <li class="list-item">
+              <span class="BodyTextSpan">공식 ICCRC 라이센스 이민 컨설턴트</span>들로 구성된 <br>이민
+              팀이 이민에 유리한 취업 방법과 전략 안내
+            </li>
+            <li class="list-item">
+              <span class="BodyTextSpan"
+                >어학원, 컬리지, 비자, 조기유학 등 진행 역시 무료 수속!</span
+              ><br>
+              할인 최대 $5000 한번에 모든 것을 도와드립니다.
+            </li>
+          </ul>
+          <a
+            href="https://forms.gle/DgMQdGom4kQ1Um7B9"
+            target="_blank"
+            class="button"
+          >
+            <div class="div-block">
+              <div class="text-block-4"><img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1a0c2d6653a3afd05c9c38016bdca082bf9b4340?type=thumb&opt=R474x0a" height="32rem" width="24rem" style="margin-right: 10px;" ></div>
+            </div>
+            <div>
+              <div class="BntTtxtbig" style="font-size: 24px;">구직신청서</div>
+              <div class="BntTtxtbig small">(구직자용)</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!—-구직자매칭 장점—->
+    <div class="section">
+      <div class="container">
+        <div class="bodywrapper">
+          <h2 class="heading-4 employer">
+            UvanU 리크루트 스페셜 구직자 매칭의 <span style="color: #1897bd;font-size: 24px;">장점</span>
+          </h2>
+          <div class="img-wrapper">
+            <div class="r-img employer" style="background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.80), hsla(0, 0.00%, 0.00%, 0.40)), url('https://t1.daumcdn.net/cafeattach/1Yrxn/37f38d0b79c23fe83910f0737c1c44ef6c72b27b');">
+              <div class="r-text employer">워킹<br>퍼밋소유자<br>
+                <span class="roundstrong employer">적재적소</span><br>매칭
+              </div>
+            </div>
+            <div class="r-img employer" style="background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.80), hsla(0, 0.00%, 0.00%, 0.40)), url('https://t1.daumcdn.net/cafeattach/1Yrxn/5c8d47c6babb8c748b65cdf96872970bb7c26617');">
+              <div class="r-text employer">
+                <span class="roundstrong employer">다양한<br>국적</span><br />
+                지원자 보유
+              </div>
+            </div>
+            <div class="r-img employer" style="background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.80), hsla(0, 0.00%, 0.00%, 0.40)), url('https://t1.daumcdn.net/cafeattach/1Yrxn/f50ac013e9306eda6cd9fded3005868a39a7649d');">
+              <div class="r-text employer">한국에서<br>
+                <span class="roundstrong employer">다이렉트<br>취업</span><br />
+                매칭가능
+              </div>
+            </div>
+            <div class="r-img employer" style="margin-right: 21px; background-image: linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.80), hsla(0, 0.00%, 0.00%, 0.40)), url('https://t1.daumcdn.net/cafeattach/1Yrxn/dd768b80a97e0bea250b69ec950fc3f28e010b75');">
+              <div class="r-text employer">원하시는<br />
+                <span class="roundstrong employer">희망 구직자</span><br />
+                
+              </div>
+            </div>
+          </div>
+          <ul role="list" class="list employer">
+            <li class="list-item">
+              다양한 지원자를 파트타임, 풀타임, 워킹홀리데이, 코업비자, 학생비자,<br/>배우자비자, SEASONAL, LMIA 지원자 등 필요하신 시기에,<br>
+              <span class="BodyTextSpan employer">필요한 인원을 적재적소 매칭!</span>
+            </li>
+            <li class="list-item">
+              우벤유 리크루트팀과<span class="BodyTextSpan employer">ICCRC 라이센스 컨설턴트</span><br>
+              들로 구성된 이민팀의 지원을 동시에 받으실 수 있습니다.
+            </li>
+            <li class="list-item">다양한 채널을 통하여 들어오는 한국 국적의 지원자 뿐만 아니라<br>
+              <span class="BodyTextSpan employer">다양한 국적의 지원자들</span>필요에 따라 취업 연결시켜드리고,<br />
+              필요시 업체와 지원자에 대한 이민 및 LMIA 진행 서포트를 제공!
+            </li>
+            <li class="list-item">
+              UvanU 리크루트 팀이 먼저 이력서와 면접을 보고 업체 측에 인터뷰에 대한<br> 내용 전달하여 적재적소 인원 배치에 효율적인 서포트 제공!
+            </li>
+            <li class="list-item">
+              <span class="BodyTextSpan employer"
+                >어학원, 컬리지, 비자, 조기유학 등 진행 역시 무료 수속!</span
+              ><br>
+              할인 최대 $5000 한번에 모든 것을 도와드립니다.
+            </li>
+          </ul>
+          <a
+            href="https://forms.gle/DgMQdGom4kQ1Um7B9"
+            target="_blank"
+            class="button employer"
+          >
+            <div class="div-block">
+              <div class="text-block-4"><img src="https://t1.daumcdn.net/cafeattach/1Yrxn/1a0c2d6653a3afd05c9c38016bdca082bf9b4340?type=thumb&opt=R474x0a" height="32rem" width="24rem" style="margin-right: 10px;"></div>
+            </div>
+            <div>
+              <div class="BntTtxtbig" style="font-size: 24px;">구인신청서</div>
+              <div class="BntTtxtbig small">(고용주용)</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-—카카오톡 오픈 채팅—->
+    <div class="section">
+      <a
+      href="https://open.kakao.com/o/sCM5s5n"
+      target="_blank" class="kakaolink" style="text-decoration: none;">
+      <h2 class="kakao">오픈카톡 상담<br>
+      가능시간 <span style="color: #fff; text-decoration: red wavy underline;
+      ">평일 10~6시</span></h2>
+      </a>
+    </div>    
+    <!-—footer—->
+    <div class="section" style="border-bottom-style: none;">
+      <p class="paragraph footer">
+        우벤유 리크루트팀에서 공식 ICCRC 라이센스 이민 컨설턴트들로 구성된 이민전문 팀의 로드맵을 따라,<br>
+        취업 뿐만 아니라 영주권 까지의 '길라잡이' 역할을 해드리겠습니다.
+      </p>
+      <p class="paragraph2">
+        * 기재된 모든 정보는 법적으로 완벽하게 보호 됩니다*
+      </p>
+    </div>
+
+  </body>
+</html>
